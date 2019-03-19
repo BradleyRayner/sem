@@ -2,11 +2,8 @@ package com.napier.sem;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
 
 import java.util.ArrayList;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 public class AppTest
 {
@@ -52,32 +49,4 @@ public class AppTest
         employees.add(emp);
         app.printSalaries(employees);
     }
-
-    @Test
-    void displayEmployee()
-    {
-        Employee emp = new Employee();
-        emp.emp_no = 1;
-        emp.first_name = "Kevin";
-        emp.last_name = "Chalmers";
-        emp.title = "Engineer";
-        emp.salary = 55000;
-        emp.dept_name = "Information Technology";
-        emp.manager = "Steven";
-        app.displayEmployee(emp);
-    }
-
-    @Test
-    void displayEmployeeTestNull()
-    {
-        app.displayEmployee(null);
-    }
-
-    @Test
-    void displayEmployeeTestEmpty()
-    {
-        Employee emp = new Employee();
-        app.displayEmployee(emp);
-    }
-
 }

@@ -5,6 +5,7 @@ package com.napier.sem;
  */
 public class Employee
 {
+
     /**
      * Employee number
      */
@@ -33,13 +34,10 @@ public class Employee
     /**
      * Employee's current department
      */
-    public String dept_name;
+    public Department dept;
 
     /**
      * Employee's manager
      */
-    public String manager;
-
-
-
+    public Employee manager;
 }
